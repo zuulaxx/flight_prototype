@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Flight Prototype - Réaliste</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="ui">
+    <div class="topbar">
+      <select id="planeSelect">
+        <option value="trainer">Trainer - équilibré</option>
+        <option value="sport">Sport - réactif</option>
+        <option value="storm">Storm - rapide</option>
+      </select>
+      <button id="spawnBtn">Spawn</button>
+      <button id="resetBtn">Reset</button>
+      <label><input type="checkbox" id="assist" checked> Assist</label>
+    </div>
+    <div class="hud">
+      <div>Vitesse: <span id="speed">0</span> m/s</div>
+      <div>Altitude: <span id="alt">0</span> m</div>
+      <div>Cap: <span id="heading">0</span>°</div>
+    </div>
+    <div id="joystick" class="joystick"><div id="stick"></div></div>
+    <div class="mobile-controls" id="mobileControls">
+      <button id="throttleUp">▲</button>
+      <button id="throttleDown">▼</button>
+    </div>
+    <div class="help">W/S: gaz | A/D: roulis | ↑/↓: cabrer/piquer | Space: frein</div>
+  </div>
+  <canvas id="c"></canvas>
+
+  <!-- App is a module that imports three.module.js locally -->
+  <script type="module" src="app.js"></script>
+</body>
+</html>

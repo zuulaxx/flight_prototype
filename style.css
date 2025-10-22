@@ -1,0 +1,12 @@
+* { box-sizing: border-box; margin:0; padding:0; font-family: Inter, Arial, sans-serif; }
+html,body,canvas { height:100%; width:100%; }
+canvas { display:block; }
+#ui { position:absolute; top:8px; left:8px; right:8px; pointer-events:none; z-index:12; }
+.topbar { display:flex; gap:8px; align-items:center; pointer-events:auto; background: rgba(255,255,255,0.85); padding:6px; border-radius:8px; }
+.topbar select, .topbar button, .topbar label { padding:6px 8px; border-radius:6px; border:1px solid rgba(0,0,0,0.12); background:#fff; }
+.hud { position:absolute; top:64px; left:8px; background: rgba(0,0,0,0.5); color:#fff; padding:8px; border-radius:6px; pointer-events:none; }
+.help { position:absolute; bottom:10px; left:10px; background: rgba(255,255,255,0.9); padding:8px 10px; border-radius:8px; font-size:12px; pointer-events:none; }
+.mobile-controls { position:absolute; right:16px; bottom:16px; display:flex; flex-direction:column; gap:6px; pointer-events:auto; }
+.mobile-controls button { padding:12px 14px; border-radius:8px; border:none; font-size:18px; background: rgba(0,0,0,0.6); color:#fff; }
+.joystick { position:absolute; left:12px; bottom:12px; width:130px; height:130px; border-radius:65px; background: rgba(0,0,0,0.12); pointer-events:auto; touch-action:none; display:flex; align-items:center; justify-content:center; }
+#stick { width:56px; height:56px; border-radius:50%; background: rgba(255,255,255,0.95); box-shadow:0 6px 12px rgba(0,0,0,0.25); transform: translate(0,0); transition: transform 0.05s; }
